@@ -17,6 +17,7 @@
 @import url('./back-link.css');
 @import url('./footer.css');
 
+/* Gallery 1 */
 
 .gallery {
   list-style: none;
@@ -37,4 +38,76 @@
   height: auto;
   display: block;
   object-fit: cover;
+}
+
+/* Form 2 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  margin: 20px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  margin: 20px auto;
+}
+
+.feedback-form label {
+  width: 100%;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.feedback-form input[type="email"],
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+.feedback-form textarea {
+  height: 80px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+.message-wrapper {
+  position: relative;
+  width: 100%;
+}
+.message-wrapper svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.feedback-form button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  background: #4e75ff;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background: #3a5fca;
 }

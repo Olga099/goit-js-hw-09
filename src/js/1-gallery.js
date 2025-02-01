@@ -67,10 +67,8 @@ const images = [
   },
 ];
 
-// Отримуємо елемент галереї
 const galleryContainer = document.querySelector(".gallery");
 
-// Генеруємо HTML-розмітку для галереї
 const galleryMarkup = images
   .map(
     ({ preview, original, description }) => `
@@ -86,11 +84,9 @@ const galleryMarkup = images
   )
   .join("");
 
-// Додаємо розмітку в DOM
 galleryContainer.innerHTML = galleryMarkup;
 
-// Ініціалізуємо SimpleLightbox
 const lightbox = new SimpleLightbox(".gallery a", {
-  captionsData: "alt", // Відображати підпис із атрибута alt
-  captionDelay: 250, // Затримка перед показом підпису (250 мс)
+  captionsData: "alt",
+  captionDelay: 250,
 });
